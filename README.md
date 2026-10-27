@@ -12,7 +12,16 @@ The app does **not** contain the game. You need your own legally obtained copy o
 - On-screen touch controls (on/off, opacity, size in the launcher). They hide when a controller connects.
 - Faster crowd in matches.
 - Graphics data is inside the APK, so there are no extra files to copy.
-- Performance log + "Send logs" button in the launcher, so you can help with speed work.
+- Performance log + "Send Logs" button in the launcher, so you can help with speed work.
+
+**Updated build (2026-10-27)** - install over your current v0.1, nothing is lost:
+- Installing from a disc image (.iso) works from more places: Downloads, SD cards, USB drives and file apps; the .iso
+  is no longer greyed out in the file picker.
+- Clear messages when something is wrong: a .zip/.7z/.rar instead of an .iso, a damaged or unfinished download, a cloud
+  file that is not on the phone yet, or not enough space.
+- Retrying after a cancelled install no longer reports "not enough space"; the screen stays on during the install.
+- "Send Logs" includes a short install log (no file names). The launcher's left side scrolls; button names are consistent.
+- New app icon, the same as the PC version.
 
 ## How to install
 ```
@@ -28,10 +37,12 @@ Steps
 2. Open it. If Android asks, allow your browser or file manager to "install unknown apps", then install.
 3. Open "WWE 2K14 Android Beta". The first start unpacks the graphics data (about 280 MB, under a minute on a Galaxy S23).
    Wait until it says "Graphics data is ready". This happens once.
-4. Tap "Install from disc image" and choose your WWE 2K14 .iso. The game is copied into the app. This takes a few
-   minutes; keep the screen on and the phone plugged in.
-5. Tap "Install title update 1.0.3". Choose either "update package file" (the Xbox 360 update file) or "extracted
-   update folder" (a folder with default.xexp at its top). It must be installed after the disc image.
+4. Tap "Install from Disc Image" and choose your WWE 2K14 .iso. It can be in Downloads, on an SD card or USB drive,
+   or in another file app. Cloud files (Google Drive and similar) must be downloaded to the phone first. The game is
+   copied into the app; this takes a few minutes. The screen stays on by itself; keep the phone plugged in.
+   If something is wrong (a .zip instead of an .iso, a damaged download, not enough space) the app now says exactly what.
+5. Tap "Install Title Update 1.0.3". Choose either "Choose Xbox 360 Update Package File" or "Choose Extracted
+   Update Folder" (a folder with default.xexp at its top). It must be installed after the disc image.
 6. When the status line says "Game files ready", the game is installed.
 7. Optional settings in the launcher (they are remembered):
    - Touch controls: On/Off, Opacity (25-75%), Size (Small/Medium/Large).
@@ -47,9 +58,10 @@ Updating
 
 If something is wrong - sending a performance log
 1. In the launcher set PERFORMANCE LOG to On (it may cost a tiny bit of speed).
-2. Play for a few minutes, close the game, open the launcher and tap "Send logs".
-3. Pick Discord (or any app) in the share sheet. The file holds the game log, your launcher settings and basic phone
-   info (model, Android version, GPU, battery temperature). No game files, no personal data.
+2. Play for a few minutes, close the game, open the launcher and tap "Send Logs".
+3. Pick Discord (or any app) in the share sheet. The file holds the game log, your launcher settings, basic phone
+   info (model, Android version, GPU, battery temperature) and a short install log (no file names). No game files,
+   no personal data.
 
 Help
 - Ask in the Promethen Projects Discord: https://discord.gg/EFnDwGB332
